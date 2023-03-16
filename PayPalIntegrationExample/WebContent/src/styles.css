@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  bc
+}
+html,
+body {
+  height: 100%;
+	overflow: hidden;
+}
+canvas {
+  display: block;
+}
+
+.log{
+  position:absolute;
+  top:200px;
+  left:870px;
+  width:8px;
+  height:8px;
+  opacity: 0.2;
+  z-index:2;
+  background-image:url(https://app.spline.design/_assets/_icons/icon_favicon32x32.png);
+  background-size:cover;}
+  .log:hover{
+    opacity:0.2;
+  }

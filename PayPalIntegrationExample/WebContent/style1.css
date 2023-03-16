@@ -1,0 +1,171 @@
+/* header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:#343436;
+    position:sticky;
+    top:0;
+    left: 0;
+ }
+ #header span{
+   list-style: none;
+   border: none;
+ }
+ #navbar.active{
+   right: 0px;
+ }
+ .logo,.navbar-brand
+ {
+   width: 60px;
+}
+@media (max-width:600px){
+   .logo,.navbar-brand
+ {
+   width: 60%;
+}
+
+}
+ 
+ #navabar h4{
+  font-size: medium;
+  
+ }
+ #navbar{
+    display: flex;
+    align-items: flex-end;
+   justify-content: end;
+
+ }
+ #navbar li{
+    list-style: none;
+    padding: 0px 20px;
+  position: relative;
+ }
+ #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(116, 113, 113) ;
+    transition: 0.3s ease;
+ }
+  #navbar li :hover, 
+ #navbar li a.active{
+    color:#088178 ; 
+    scale: 2;
+    
+  }
+ 
+ /* #navbar li .active::after,
+  #navbar li :hover::after{
+    content: "";
+    width: 60%;
+    height:2px;
+    background: #088178;
+    position: absolsute;
+    bottom: -5px;
+    left: 30px;
+    transform: translateX(-15%);
+    transition:0.5s;
+  } */
+
+    #navbar li a::after{
+
+      text-align: center;
+      content: "";
+      width: 0;
+      height:2px;
+      background: #088178;
+      position: absolute;
+      bottom: -5px;
+      left: 60px;
+      transform: translateX(-50%);}
+
+   
+ 
+
+ #navbar li a :hover::after{
+   width: 50%;
+ }
+
+
+ #homeimg{
+  background-image: url("img/high.jpg");
+  width: 100%;
+height: 600px;
+  background-size: cover;
+  z-index: -1;
+}
+.texth{
+  padding: 0 40px;
+  padding-top: 300px;
+}
+.texth h2{
+  padding-bottom: 15px;
+  color: white;
+
+}
+.texth h2{
+  color: white;
+}
+
+.updates{
+  border: 20px;
+  border: #088178;
+  border-radius: 10px;
+  border-color: red;
+}
+.update{
+  display: inline-block;
+  text-align: center;
+  padding-left: 50px;
+}
+.update i,h2{
+ 
+  display: inline;
+}
+
+.card:hover{
+  border: 3px solid navy;
+  border-radius: 8px;
+  scale: 1.1;
+}
+
+.card img{
+   width: 100%;
+   height:200px;
+   padding: 10px;
+   padding-bottom: 0;
+   border-radius: 15px;
+   
+}
+
+#product:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+#product span{
+  color: #606063;
+  font-size:20px;
+  font-weight: 600;
+}
+#product h6{
+  font-weight: 600;
+}
+
+#product  .cart{
+  height:40px;
+  
+  font-weight: 600;
+  color: #088178;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.container img{
+  height:600px;
+  width: 600px;
+}
